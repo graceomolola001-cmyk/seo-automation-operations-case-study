@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.n8n/
+node_modules/
+*.sqlite*
+*.db
+*.log
+*.zip
+*.xlsx
+*.xls
+*.csv.bak
+coverage/

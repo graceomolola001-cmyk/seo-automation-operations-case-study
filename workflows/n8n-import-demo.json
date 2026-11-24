@@ -1,0 +1,252 @@
+{
+  "name": "PORTFOLIO DEMO | SEO Ops: Source → QA → CRM → UX → Report",
+  "nodes": [
+    {
+      "id": "3b9330fcb75e87f0aceace6ac06c1f1d",
+      "name": "START | Run Synthetic End-to-End Demo",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        320
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "978c5352ba2984dddff1c7c67c2a48c4",
+      "name": "01 | Load Synthetic SEO + CRM Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        520,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d = {\"dataset_kind\":\"synthetic\",\"reporting_window\":{\"previous_start\":\"2026-10-01\",\"previous_end\":\"2026-10-07\",\"current_start\":\"2026-10-08\",\"current_end\":\"2026-10-14\",\"as_of\":\"2026-10-17\"},\"gsc\":{\"truncated\":false,\"daily\":[{\"date\":\"2026-10-01\",\"clicks\":220,\"impressions\":4400,\"status\":\"final\"},{\"date\":\"2026-10-02\",\"clicks\":225,\"impressions\":4500,\"status\":\"final\"},{\"date\":\"2026-10-03\",\"clicks\":210,\"impressions\":4200,\"status\":\"final\"},{\"date\":\"2026-10-04\",\"clicks\":230,\"impressions\":4600,\"status\":\"final\"},{\"date\":\"2026-10-05\",\"clicks\":220,\"impressions\":4400,\"status\":\"final\"},{\"date\":\"2026-10-06\",\"clicks\":240,\"impressions\":4800,\"status\":\"final\"},{\"date\":\"2026-10-07\",\"clicks\":255,\"impressions\":5100,\"status\":\"final\"},{\"date\":\"2026-10-08\",\"clicks\":165,\"impressions\":3300,\"status\":\"final\"},{\"date\":\"2026-10-09\",\"clicks\":175,\"impressions\":3500,\"status\":\"final\"},{\"date\":\"2026-10-10\",\"clicks\":160,\"impressions\":3200,\"status\":\"final\"},{\"date\":\"2026-10-11\",\"clicks\":170,\"impressions\":3400,\"status\":\"final\"},{\"date\":\"2026-10-12\",\"clicks\":180,\"impressions\":3600,\"status\":\"final\"},{\"date\":\"2026-10-13\",\"clicks\":175,\"impressions\":3500,\"status\":\"final\"},{\"date\":\"2026-10-14\",\"clicks\":175,\"impressions\":3500,\"status\":\"final\"}]},\"ga4\":{\"truncated\":false,\"daily\":[{\"date\":\"2026-10-01\",\"organic_sessions\":440,\"event_name\":\"prospectus_form_submit\",\"event_count\":19,\"status\":\"matured\"},{\"date\":\"2026-10-02\",\"organic_sessions\":450,\"event_name\":\"prospectus_form_submit\",\"event_count\":18,\"status\":\"matured\"},{\"date\":\"2026-10-03\",\"organic_sessions\":420,\"event_name\":\"prospectus_form_submit\",\"event_count\":20,\"status\":\"matured\"},{\"date\":\"2026-10-04\",\"organic_sessions\":460,\"event_name\":\"prospectus_form_submit\",\"event_count\":21,\"status\":\"matured\"},{\"date\":\"2026-10-05\",\"organic_sessions\":440,\"event_name\":\"prospectus_form_submit\",\"event_count\":17,\"status\":\"matured\"},{\"date\":\"2026-10-06\",\"organic_sessions\":480,\"event_name\":\"prospectus_form_submit\",\"event_count\":18,\"status\":\"matured\"},{\"date\":\"2026-10-07\",\"organic_sessions\":510,\"event_name\":\"prospectus_form_submit\",\"event_count\":17,\"status\":\"matured\"},{\"date\":\"2026-10-08\",\"organic_sessions\":330,\"event_name\":\"prospectus_form_submit\",\"event_count\":12,\"status\":\"matured\"},{\"date\":\"2026-10-09\",\"organic_sessions\":350,\"event_name\":\"prospectus_form_submit\",\"event_count\":13,\"status\":\"matured\"},{\"date\":\"2026-10-10\",\"organic_sessions\":320,\"event_name\":\"prospectus_form_submit\",\"event_count\":10,\"status\":\"matured\"},{\"date\":\"2026-10-11\",\"organic_sessions\":340,\"event_name\":\"prospectus_form_submit\",\"event_count\":14,\"status\":\"matured\"},{\"date\":\"2026-10-12\",\"organic_sessions\":360,\"event_name\":\"prospectus_form_submit\",\"event_count\":11,\"status\":\"matured\"},{\"date\":\"2026-10-13\",\"organic_sessions\":350,\"event_name\":\"prospectus_form_submit\",\"event_count\":12,\"status\":\"matured\"},{\"date\":\"2026-10-14\",\"organic_sessions\":350,\"event_name\":\"prospectus_form_submit\",\"event_count\":12,\"status\":\"matured\"}]},\"clarity_snapshots\":[{\"captured_on\":\"2026-10-13\",\"channel\":\"OrganicSearch\",\"device\":\"Mobile\",\"sessions\":360,\"dead_click_session_pct\":10.0,\"rage_click_session_pct\":1.0,\"quickback_session_pct\":7.0,\"scroll_depth_pct\":68.0,\"script_error_count\":2,\"verified\":true},{\"captured_on\":\"2026-10-13\",\"channel\":\"OrganicSearch\",\"device\":\"PC\",\"sessions\":180,\"dead_click_session_pct\":9.0,\"rage_click_session_pct\":0.0,\"quickback_session_pct\":5.0,\"scroll_depth_pct\":73.0,\"script_error_count\":0,\"verified\":true},{\"captured_on\":\"2026-10-13\",\"channel\":\"PaidSearch\",\"device\":\"Mobile\",\"sessions\":1200,\"dead_click_session_pct\":25.0,\"rage_click_session_pct\":3.0,\"quickback_session_pct\":9.0,\"scroll_depth_pct\":56.0,\"script_error_count\":7,\"verified\":true},{\"captured_on\":\"2026-10-13\",\"channel\":\"PaidSearch\",\"device\":\"PC\",\"sessions\":190,\"dead_click_session_pct\":10.0,\"rage_click_session_pct\":1.0,\"quickback_session_pct\":4.0,\"scroll_depth_pct\":71.0,\"script_error_count\":0,\"verified\":true},{\"captured_on\":\"2026-10-14\",\"channel\":\"OrganicSearch\",\"device\":\"Mobile\",\"sessions\":360,\"dead_click_session_pct\":19.0,\"rage_click_session_pct\":1.0,\"quickback_session_pct\":7.0,\"scroll_depth_pct\":68.0,\"script_error_count\":2,\"verified\":true},{\"captured_on\":\"2026-10-14\",\"channel\":\"OrganicSearch\",\"device\":\"PC\",\"sessions\":180,\"dead_click_session_pct\":10.0,\"rage_click_session_pct\":0.0,\"quickback_session_pct\":5.0,\"scroll_depth_pct\":73.0,\"script_error_count\":0,\"verified\":true},{\"captured_on\":\"2026-10-14\",\"channel\":\"PaidSearch\",\"device\":\"Mobile\",\"sessions\":1200,\"dead_click_session_pct\":32.0,\"rage_click_session_pct\":3.0,\"quickback_session_pct\":9.0,\"scroll_depth_pct\":56.0,\"script_error_count\":18,\"verified\":true},{\"captured_on\":\"2026-10-14\",\"channel\":\"PaidSearch\",\"device\":\"PC\",\"sessions\":190,\"dead_click_session_pct\":10.0,\"rage_click_session_pct\":1.0,\"quickback_session_pct\":4.0,\"scroll_depth_pct\":71.0,\"script_error_count\":0,\"verified\":true}],\"posts\":[{\"post_id\":\"POST-101\",\"publish_date\":\"2026-09-15\",\"path\":\"/blog/search-intent-explained/\"},{\"post_id\":\"POST-202\",\"publish_date\":\"2026-10-08\",\"path\":\"/blog/write-a-better-prospectus-page/\"}],\"page_gsc_daily\":[{\"post_id\":\"POST-101\",\"date\":\"2026-09-15\",\"clicks\":7,\"impressions\":100},{\"post_id\":\"POST-101\",\"date\":\"2026-09-16\",\"clicks\":8,\"impressions\":103},{\"post_id\":\"POST-101\",\"date\":\"2026-09-17\",\"clicks\":9,\"impressions\":106},{\"post_id\":\"POST-101\",\"date\":\"2026-09-18\",\"clicks\":10,\"impressions\":109},{\"post_id\":\"POST-101\",\"date\":\"2026-09-19\",\"clicks\":11,\"impressions\":112},{\"post_id\":\"POST-101\",\"date\":\"2026-09-20\",\"clicks\":7,\"impressions\":115},{\"post_id\":\"POST-101\",\"date\":\"2026-09-21\",\"clicks\":8,\"impressions\":118},{\"post_id\":\"POST-101\",\"date\":\"2026-09-22\",\"clicks\":9,\"impressions\":121},{\"post_id\":\"POST-101\",\"date\":\"2026-09-23\",\"clicks\":10,\"impressions\":124},{\"post_id\":\"POST-101\",\"date\":\"2026-09-24\",\"clicks\":11,\"impressions\":127},{\"post_id\":\"POST-101\",\"date\":\"2026-09-25\",\"clicks\":7,\"impressions\":130},{\"post_id\":\"POST-101\",\"date\":\"2026-09-26\",\"clicks\":8,\"impressions\":133},{\"post_id\":\"POST-101\",\"date\":\"2026-09-27\",\"clicks\":9,\"impressions\":136},{\"post_id\":\"POST-101\",\"date\":\"2026-09-28\",\"clicks\":10,\"impressions\":139},{\"post_id\":\"POST-101\",\"date\":\"2026-09-29\",\"clicks\":11,\"impressions\":142},{\"post_id\":\"POST-101\",\"date\":\"2026-09-30\",\"clicks\":7,\"impressions\":145},{\"post_id\":\"POST-101\",\"date\":\"2026-10-01\",\"clicks\":8,\"impressions\":148},{\"post_id\":\"POST-101\",\"date\":\"2026-10-02\",\"clicks\":9,\"impressions\":151},{\"post_id\":\"POST-101\",\"date\":\"2026-10-03\",\"clicks\":10,\"impressions\":154},{\"post_id\":\"POST-101\",\"date\":\"2026-10-04\",\"clicks\":11,\"impressions\":157},{\"post_id\":\"POST-101\",\"date\":\"2026-10-05\",\"clicks\":7,\"impressions\":160},{\"post_id\":\"POST-101\",\"date\":\"2026-10-06\",\"clicks\":8,\"impressions\":163},{\"post_id\":\"POST-101\",\"date\":\"2026-10-07\",\"clicks\":9,\"impressions\":166},{\"post_id\":\"POST-101\",\"date\":\"2026-10-08\",\"clicks\":10,\"impressions\":169},{\"post_id\":\"POST-101\",\"date\":\"2026-10-09\",\"clicks\":11,\"impressions\":172},{\"post_id\":\"POST-101\",\"date\":\"2026-10-10\",\"clicks\":7,\"impressions\":175},{\"post_id\":\"POST-101\",\"date\":\"2026-10-11\",\"clicks\":8,\"impressions\":178},{\"post_id\":\"POST-101\",\"date\":\"2026-10-12\",\"clicks\":9,\"impressions\":181},{\"post_id\":\"POST-202\",\"date\":\"2026-10-08\",\"clicks\":12,\"impressions\":150},{\"post_id\":\"POST-202\",\"date\":\"2026-10-09\",\"clicks\":13,\"impressions\":156},{\"post_id\":\"POST-202\",\"date\":\"2026-10-10\",\"clicks\":14,\"impressions\":162},{\"post_id\":\"POST-202\",\"date\":\"2026-10-11\",\"clicks\":15,\"impressions\":168},{\"post_id\":\"POST-202\",\"date\":\"2026-10-12\",\"clicks\":16,\"impressions\":174},{\"post_id\":\"POST-202\",\"date\":\"2026-10-13\",\"clicks\":17,\"impressions\":180},{\"post_id\":\"POST-202\",\"date\":\"2026-10-14\",\"clicks\":18,\"impressions\":186}],\"crm_fixture\":{\"mode\":\"synthetic_fixture\",\"contacts\":[{\"contact_id\":\"FAKE-000\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-001\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-002\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-003\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-004\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-005\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-006\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-007\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-008\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-009\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-010\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-011\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-012\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-013\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-014\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-015\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-016\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-017\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-018\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-019\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-020\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-021\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-022\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-023\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-024\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-025\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-026\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-027\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-028\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-029\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-030\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-031\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-032\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-033\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-034\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-035\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-036\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-037\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-038\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-039\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-040\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-041\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-042\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-043\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-044\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-045\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-046\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-047\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-048\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-049\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-050\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-051\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-052\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-053\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-054\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-055\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-056\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-057\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-058\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"},{\"contact_id\":\"FAKE-059\",\"created_on\":\"2026-10-08\",\"stage\":\"applied\"},{\"contact_id\":\"FAKE-060\",\"created_on\":\"2026-10-08\",\"stage\":\"new\"},{\"contact_id\":\"FAKE-061\",\"created_on\":\"2026-10-08\",\"stage\":\"contacted\"}]},\"illustrative_efficiency_model\":{\"manual_hours_per_week\":5,\"review_hours_per_week\":1}};\nreturn [{json:d}];"
+      }
+    },
+    {
+      "id": "1185bb7bbcf3d5b63f0a4ddd421066dc",
+      "name": "02 | Validate Source Dates + Metric Contracts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        800,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json;function check(x,msg){if(!x)throw new Error('QA blocked: '+msg)}\ncheck(d.dataset_kind==='synthetic','production data cannot be used in public demo');\nconst g=d.gsc.daily,a=d.ga4.daily;\ncheck(d.gsc.truncated===false&&d.ga4.truncated===false,'API row limit reached');\ncheck(g.length>=14&&a.length>=14,'too few days');\nconst days=[...new Set(g.map(x=>x.date))].sort();\ncheck(days.length===14,'GSC dates missing or duplicated');\ncheck(g.every(x=>x.status==='final'&&Number.isInteger(x.clicks)&&x.clicks>=0&&x.clicks<=x.impressions),'GSC must be finalized');\ncheck(a.every(x=>x.status==='matured'&&x.event_name==='prospectus_form_submit'&&Number.isInteger(x.event_count)),'GA4 event not confirmed/matured');\ncheck(new Set(a.map(x=>x.date)).size===14,'GA4 date coverage missing');\ncheck(d.clarity_snapshots.length<1000,'Clarity has hit API row cap');\ncheck(d.crm_fixture.mode==='synthetic_fixture','CRM integration requires a connected account');\nreturn [{json:{...d,qa:{coverage:'PASS',leadEvent:'prospectus_form_submit',sourceRows:g.length+a.length}}}];"
+      }
+    },
+    {
+      "id": "e2e9cc0b216d76e3435e842d8726e290",
+      "name": "03 | Normalize + Deduplicate Upserts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1080,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json;\nconst dedupe=(rows,fields)=>{const by=new Map();for(const r of rows){const k=fields.map(f=>r[f]).join('|');if(by.has(k)&&JSON.stringify(by.get(k))!==JSON.stringify(r))throw new Error('Conflicting duplicate: '+k);by.set(k,r)}return [...by.values()]};\nconst g=dedupe(d.gsc.daily,['date']);const a=dedupe(d.ga4.daily,['date','event_name']);\nconst c=dedupe(d.crm_fixture.contacts,['contact_id']);\nreturn [{json:{...d,gsc:{...d.gsc,daily:g},ga4:{...d.ga4,daily:a},crm_fixture:{...d.crm_fixture,contacts:c},qa:{...d.qa,deduped:true}}}];"
+      }
+    },
+    {
+      "id": "41b0ec59bbbb419ed9f989719afe372d",
+      "name": "04 | Calculate Search + Prospectus Trends",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1360,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json;const start=d.reporting_window.current_start;const sum=(rows,field,latest)=>rows.filter(x=>latest?x.date>=start:x.date<start).reduce((n,x)=>n+Number(x[field]||0),0);\nconst kpi=(rows,field)=>{const p=sum(rows,field,false),c=sum(rows,field,true);return {previous:p,current:c,change_pct:p?Math.round((c-p)*1000/p)/10:null}};\nconst stats={gsc_organic_clicks:kpi(d.gsc.daily,'clicks'),gsc_impressions:kpi(d.gsc.daily,'impressions'),ga4_organic_sessions:kpi(d.ga4.daily,'organic_sessions'),ga4_prospectus_form_submit_events:kpi(d.ga4.daily,'event_count')};\nreturn [{json:{...d,stats}}];"
+      }
+    },
+    {
+      "id": "00c39f38e3d052b9b32f9377c32d5377",
+      "name": "05 | CRM Adapter (Simulated) + Reconciliation",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1640,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json,contacts=d.crm_fixture.contacts;const unique=new Set(contacts.map(x=>x.contact_id));if(unique.size!==contacts.length)throw new Error('CRM duplicate contact IDs');\nconst events=d.stats.ga4_prospectus_form_submit_events.current;\nconst crm={mode:'SYNTHETIC ONLY: no live CRM connection',unique_contacts:unique.size,ga4_event_occurrences:events,difference:events-unique.size,status:'needs_follow_up',note:'Event occurrences and unique CRM contacts have different measurement units.'};\nreturn [{json:{...d,crm}}];"
+      }
+    },
+    {
+      "id": "976bda7e5fe371ee2aacccc542e30b5d",
+      "name": "06 | Clarity Organic / Paid Mobile Friction",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json,rows=d.clarity_snapshots;const dates=[...new Set(rows.map(x=>x.captured_on))].sort();if(dates.length<2)throw new Error('Need two Clarity captures');const latest=dates.at(-1),before=dates.at(-2);const index=new Map(rows.filter(x=>x.captured_on===before).map(x=>[x.channel+'|'+x.device,x]));let issues=[];\nfor(const curr of rows.filter(x=>x.captured_on===latest)){\n if(!curr.verified||curr.dead_click_session_pct<0||curr.dead_click_session_pct>100)throw new Error('Invalid Clarity percentage');\n const key=curr.channel+'|'+curr.device,prev=index.get(key);if(!prev||Math.min(curr.sessions,prev.sessions)<100)continue;\n const diff=Math.round((curr.dead_click_session_pct-prev.dead_click_session_pct)*10)/10;\n if(curr.dead_click_session_pct>=15&&diff>=5)issues.push({segment:key,metric:'dead_click_session_pct',current_pct:curr.dead_click_session_pct,change_pp:diff,sessions:curr.sessions,action:'Inspect recordings and heatmaps, test CTA and forms'});\n if(curr.script_error_count>=10)issues.push({segment:key,metric:'script_error_count',events:curr.script_error_count,action:'Check JavaScript and form submission logs'});\n}\nreturn [{json:{...d,clarity_summary:{latest_capture:latest,scope:'sitewide channel x device',issues}}}];"
+      }
+    },
+    {
+      "id": "448437426887b7f317db433fb6dcbe67",
+      "name": "07 | Track Blog 7 / 14 / 28-Day Cohorts",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2200,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json,utc=x=>new Date(x+'T00:00:00Z').getTime(),day=86400000,asof=utc(d.reporting_window.as_of);\nconst posts=d.posts.map(p=>{const pub=utc(p.publish_date),metrics={};for(const n of [7,14,28]){const last=pub+(n-1)*day,mature=asof>=pub+(n+1)*day;const rows=d.page_gsc_daily.filter(r=>r.post_id===p.post_id&&utc(r.date)>=pub&&utc(r.date)<=last);metrics[n]=!mature?{status:'awaiting_maturity'}:new Set(rows.map(r=>r.date)).size!==n?{status:'missing_historical_coverage',days_available:rows.length}:{status:'complete',clicks:rows.reduce((s,r)=>s+r.clicks,0)};}return {post_id:p.post_id,path:p.path,cohorts:metrics}});\nreturn [{json:{...d,posts_summary:posts}}];"
+      }
+    },
+    {
+      "id": "5a8fd65f2b1cdf5405fb3bcc5e06161b",
+      "name": "08 | Simulate Idempotent Sheets Upserts + Readback",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2480,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json,period=d.reporting_window.current_end,rows=[{row_key:period+'|organic_clicks',value:d.stats.gsc_organic_clicks.current},{row_key:period+'|prospectus_events',value:d.stats.ga4_prospectus_form_submit_events.current}];\nconst stored=new Map();for(const row of rows){stored.set(row.row_key,{...row});stored.set(row.row_key,{...row})}for(const row of rows){if(JSON.stringify(stored.get(row.row_key))!==JSON.stringify(row))throw new Error('Saved row differs from source');}\nif(stored.size!==rows.length)throw new Error('Duplicate writes not suppressed');\nreturn [{json:{...d,storage:{mode:'in-memory Sheets upsert simulation',readback_verified:true,unique_rows:stored.size,duplicate_write_attempts:rows.length}}}];"
+      }
+    },
+    {
+      "id": "0a6714c679443269a9c4b8f7899e2d58",
+      "name": "09 | Publish Decision-Ready Demo Output",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2760,
+        320
+      ],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "const d=$input.first().json,stats=d.stats;const alerts=[];\nif(stats.gsc_organic_clicks.change_pct<=-20)alerts.push({metric:'organic_clicks',severity:'review',action:'Check rankings, top pages, search demand and crawl/index coverage'});\nif(stats.ga4_prospectus_form_submit_events.change_pct<=-20)alerts.push({metric:'prospectus_form_submit_events',severity:'review',action:'Audit GA4 event firing and prospectus form path; do not claim this equals unique leads'});\nfor(const x of d.clarity_summary.issues)alerts.push({metric:x.metric,segment:x.segment,severity:'investigate',action:x.action});\nconst output={status:'DEMO_COMPLETE',data_kind:'SYNTHETIC - not client measurements',ga4_event_is_not_crm_lead:true,source_qa:d.qa,weekly_kpis:stats,crm_reconciliation:d.crm,clarity:d.clarity_summary,blog_cohorts:d.posts_summary,sheets_readback:d.storage,alerts,recommended_next_steps:alerts.slice(0,3).map(x=>x.action),business_efficiency_example:{before_hours_per_week:5,review_hours_per_week:1,estimated_hours_freed:4,disclaimer:'Illustrative assumptions, not measured time savings'}};\nreturn [{json:output}];"
+      }
+    }
+  ],
+  "connections": {
+    "START | Run Synthetic End-to-End Demo": {
+      "main": [
+        [
+          {
+            "node": "01 | Load Synthetic SEO + CRM Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "01 | Load Synthetic SEO + CRM Data": {
+      "main": [
+        [
+          {
+            "node": "02 | Validate Source Dates + Metric Contracts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "02 | Validate Source Dates + Metric Contracts": {
+      "main": [
+        [
+          {
+            "node": "03 | Normalize + Deduplicate Upserts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "03 | Normalize + Deduplicate Upserts": {
+      "main": [
+        [
+          {
+            "node": "04 | Calculate Search + Prospectus Trends",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "04 | Calculate Search + Prospectus Trends": {
+      "main": [
+        [
+          {
+            "node": "05 | CRM Adapter (Simulated) + Reconciliation",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "05 | CRM Adapter (Simulated) + Reconciliation": {
+      "main": [
+        [
+          {
+            "node": "06 | Clarity Organic / Paid Mobile Friction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "06 | Clarity Organic / Paid Mobile Friction": {
+      "main": [
+        [
+          {
+            "node": "07 | Track Blog 7 / 14 / 28-Day Cohorts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "07 | Track Blog 7 / 14 / 28-Day Cohorts": {
+      "main": [
+        [
+          {
+            "node": "08 | Simulate Idempotent Sheets Upserts + Readback",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "08 | Simulate Idempotent Sheets Upserts + Readback": {
+      "main": [
+        [
+          {
+            "node": "09 | Publish Decision-Ready Demo Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Etc/UTC"
+  },
+  "active": false,
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true
+  }
+}

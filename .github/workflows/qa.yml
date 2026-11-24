@@ -1,0 +1,25 @@
+name: Test synthetic SEO automation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Unit and integration-quality tests
+        run: python -m unittest discover -s tests -v
+      - name: Ensure example output stays deterministic
+        run: |
+          python -m src.pipeline --input examples/demo_input.json --out /tmp/seo-demo-output.json
+          diff -u examples/demo_output.json /tmp/seo-demo-output.json
+      - name: Test importable n8n Code nodes locally
+        run: |
+          node scripts/replay_n8n_demo.js > /tmp/n8n-replay.json
+          diff -u examples/n8n_demo_output.json /tmp/n8n-replay.json
+      - name: Public-safety scan
+        run: python scripts/security_scan.py .

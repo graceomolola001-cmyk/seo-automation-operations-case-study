@@ -1,0 +1,152 @@
+{
+  "status": "DEMO_COMPLETE",
+  "data_kind": "SYNTHETIC - not client measurements",
+  "ga4_event_is_not_crm_lead": true,
+  "source_qa": {
+    "coverage": "PASS",
+    "leadEvent": "prospectus_form_submit",
+    "sourceRows": 28,
+    "deduped": true
+  },
+  "weekly_kpis": {
+    "gsc_organic_clicks": {
+      "previous": 1600,
+      "current": 1200,
+      "change_pct": -25
+    },
+    "gsc_impressions": {
+      "previous": 32000,
+      "current": 24000,
+      "change_pct": -25
+    },
+    "ga4_organic_sessions": {
+      "previous": 3200,
+      "current": 2400,
+      "change_pct": -25
+    },
+    "ga4_prospectus_form_submit_events": {
+      "previous": 130,
+      "current": 84,
+      "change_pct": -35.4
+    }
+  },
+  "crm_reconciliation": {
+    "mode": "SYNTHETIC ONLY: no live CRM connection",
+    "unique_contacts": 62,
+    "ga4_event_occurrences": 84,
+    "difference": 22,
+    "status": "needs_follow_up",
+    "note": "Event occurrences and unique CRM contacts have different measurement units."
+  },
+  "clarity": {
+    "latest_capture": "2026-10-14",
+    "scope": "sitewide channel x device",
+    "issues": [
+      {
+        "segment": "OrganicSearch|Mobile",
+        "metric": "dead_click_session_pct",
+        "current_pct": 19,
+        "change_pp": 9,
+        "sessions": 360,
+        "action": "Inspect recordings and heatmaps, test CTA and forms"
+      },
+      {
+        "segment": "PaidSearch|Mobile",
+        "metric": "dead_click_session_pct",
+        "current_pct": 32,
+        "change_pp": 7,
+        "sessions": 1200,
+        "action": "Inspect recordings and heatmaps, test CTA and forms"
+      },
+      {
+        "segment": "PaidSearch|Mobile",
+        "metric": "script_error_count",
+        "events": 18,
+        "action": "Check JavaScript and form submission logs"
+      }
+    ]
+  },
+  "blog_cohorts": [
+    {
+      "post_id": "POST-101",
+      "path": "/blog/search-intent-explained/",
+      "cohorts": {
+        "7": {
+          "status": "complete",
+          "clicks": 60
+        },
+        "14": {
+          "status": "complete",
+          "clicks": 124
+        },
+        "28": {
+          "status": "complete",
+          "clicks": 249
+        }
+      }
+    },
+    {
+      "post_id": "POST-202",
+      "path": "/blog/write-a-better-prospectus-page/",
+      "cohorts": {
+        "7": {
+          "status": "complete",
+          "clicks": 105
+        },
+        "14": {
+          "status": "awaiting_maturity"
+        },
+        "28": {
+          "status": "awaiting_maturity"
+        }
+      }
+    }
+  ],
+  "sheets_readback": {
+    "mode": "in-memory Sheets upsert simulation",
+    "readback_verified": true,
+    "unique_rows": 2,
+    "duplicate_write_attempts": 2
+  },
+  "alerts": [
+    {
+      "metric": "organic_clicks",
+      "severity": "review",
+      "action": "Check rankings, top pages, search demand and crawl/index coverage"
+    },
+    {
+      "metric": "prospectus_form_submit_events",
+      "severity": "review",
+      "action": "Audit GA4 event firing and prospectus form path; do not claim this equals unique leads"
+    },
+    {
+      "metric": "dead_click_session_pct",
+      "segment": "OrganicSearch|Mobile",
+      "severity": "investigate",
+      "action": "Inspect recordings and heatmaps, test CTA and forms"
+    },
+    {
+      "metric": "dead_click_session_pct",
+      "segment": "PaidSearch|Mobile",
+      "severity": "investigate",
+      "action": "Inspect recordings and heatmaps, test CTA and forms"
+    },
+    {
+      "metric": "script_error_count",
+      "segment": "PaidSearch|Mobile",
+      "severity": "investigate",
+      "action": "Check JavaScript and form submission logs"
+    }
+  ],
+  "recommended_next_steps": [
+    "Check rankings, top pages, search demand and crawl/index coverage",
+    "Audit GA4 event firing and prospectus form path; do not claim this equals unique leads",
+    "Inspect recordings and heatmaps, test CTA and forms"
+  ],
+  "business_efficiency_example": {
+    "before_hours_per_week": 5,
+    "review_hours_per_week": 1,
+    "estimated_hours_freed": 4,
+    "disclaimer": "Illustrative assumptions, not measured time savings"
+  }
+}

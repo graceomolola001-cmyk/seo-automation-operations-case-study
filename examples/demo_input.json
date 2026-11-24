@@ -1,0 +1,843 @@
+{
+  "dataset_kind": "synthetic",
+  "reporting_window": {
+    "previous_start": "2026-10-01",
+    "previous_end": "2026-10-07",
+    "current_start": "2026-10-08",
+    "current_end": "2026-10-14",
+    "as_of": "2026-10-17"
+  },
+  "gsc": {
+    "truncated": false,
+    "daily": [
+      {
+        "date": "2026-10-01",
+        "clicks": 220,
+        "impressions": 4400,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-02",
+        "clicks": 225,
+        "impressions": 4500,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-03",
+        "clicks": 210,
+        "impressions": 4200,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-04",
+        "clicks": 230,
+        "impressions": 4600,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-05",
+        "clicks": 220,
+        "impressions": 4400,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-06",
+        "clicks": 240,
+        "impressions": 4800,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-07",
+        "clicks": 255,
+        "impressions": 5100,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-08",
+        "clicks": 165,
+        "impressions": 3300,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-09",
+        "clicks": 175,
+        "impressions": 3500,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-10",
+        "clicks": 160,
+        "impressions": 3200,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-11",
+        "clicks": 170,
+        "impressions": 3400,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-12",
+        "clicks": 180,
+        "impressions": 3600,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-13",
+        "clicks": 175,
+        "impressions": 3500,
+        "status": "final"
+      },
+      {
+        "date": "2026-10-14",
+        "clicks": 175,
+        "impressions": 3500,
+        "status": "final"
+      }
+    ]
+  },
+  "ga4": {
+    "truncated": false,
+    "daily": [
+      {
+        "date": "2026-10-01",
+        "organic_sessions": 440,
+        "event_name": "prospectus_form_submit",
+        "event_count": 19,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-02",
+        "organic_sessions": 450,
+        "event_name": "prospectus_form_submit",
+        "event_count": 18,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-03",
+        "organic_sessions": 420,
+        "event_name": "prospectus_form_submit",
+        "event_count": 20,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-04",
+        "organic_sessions": 460,
+        "event_name": "prospectus_form_submit",
+        "event_count": 21,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-05",
+        "organic_sessions": 440,
+        "event_name": "prospectus_form_submit",
+        "event_count": 17,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-06",
+        "organic_sessions": 480,
+        "event_name": "prospectus_form_submit",
+        "event_count": 18,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-07",
+        "organic_sessions": 510,
+        "event_name": "prospectus_form_submit",
+        "event_count": 17,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-08",
+        "organic_sessions": 330,
+        "event_name": "prospectus_form_submit",
+        "event_count": 12,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-09",
+        "organic_sessions": 350,
+        "event_name": "prospectus_form_submit",
+        "event_count": 13,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-10",
+        "organic_sessions": 320,
+        "event_name": "prospectus_form_submit",
+        "event_count": 10,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-11",
+        "organic_sessions": 340,
+        "event_name": "prospectus_form_submit",
+        "event_count": 14,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-12",
+        "organic_sessions": 360,
+        "event_name": "prospectus_form_submit",
+        "event_count": 11,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-13",
+        "organic_sessions": 350,
+        "event_name": "prospectus_form_submit",
+        "event_count": 12,
+        "status": "matured"
+      },
+      {
+        "date": "2026-10-14",
+        "organic_sessions": 350,
+        "event_name": "prospectus_form_submit",
+        "event_count": 12,
+        "status": "matured"
+      }
+    ]
+  },
+  "clarity_snapshots": [
+    {
+      "captured_on": "2026-10-13",
+      "channel": "OrganicSearch",
+      "device": "Mobile",
+      "sessions": 360,
+      "dead_click_session_pct": 10.0,
+      "rage_click_session_pct": 1.0,
+      "quickback_session_pct": 7.0,
+      "scroll_depth_pct": 68.0,
+      "script_error_count": 2,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-13",
+      "channel": "OrganicSearch",
+      "device": "PC",
+      "sessions": 180,
+      "dead_click_session_pct": 9.0,
+      "rage_click_session_pct": 0.0,
+      "quickback_session_pct": 5.0,
+      "scroll_depth_pct": 73.0,
+      "script_error_count": 0,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-13",
+      "channel": "PaidSearch",
+      "device": "Mobile",
+      "sessions": 1200,
+      "dead_click_session_pct": 25.0,
+      "rage_click_session_pct": 3.0,
+      "quickback_session_pct": 9.0,
+      "scroll_depth_pct": 56.0,
+      "script_error_count": 7,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-13",
+      "channel": "PaidSearch",
+      "device": "PC",
+      "sessions": 190,
+      "dead_click_session_pct": 10.0,
+      "rage_click_session_pct": 1.0,
+      "quickback_session_pct": 4.0,
+      "scroll_depth_pct": 71.0,
+      "script_error_count": 0,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-14",
+      "channel": "OrganicSearch",
+      "device": "Mobile",
+      "sessions": 360,
+      "dead_click_session_pct": 19.0,
+      "rage_click_session_pct": 1.0,
+      "quickback_session_pct": 7.0,
+      "scroll_depth_pct": 68.0,
+      "script_error_count": 2,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-14",
+      "channel": "OrganicSearch",
+      "device": "PC",
+      "sessions": 180,
+      "dead_click_session_pct": 10.0,
+      "rage_click_session_pct": 0.0,
+      "quickback_session_pct": 5.0,
+      "scroll_depth_pct": 73.0,
+      "script_error_count": 0,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-14",
+      "channel": "PaidSearch",
+      "device": "Mobile",
+      "sessions": 1200,
+      "dead_click_session_pct": 32.0,
+      "rage_click_session_pct": 3.0,
+      "quickback_session_pct": 9.0,
+      "scroll_depth_pct": 56.0,
+      "script_error_count": 18,
+      "verified": true
+    },
+    {
+      "captured_on": "2026-10-14",
+      "channel": "PaidSearch",
+      "device": "PC",
+      "sessions": 190,
+      "dead_click_session_pct": 10.0,
+      "rage_click_session_pct": 1.0,
+      "quickback_session_pct": 4.0,
+      "scroll_depth_pct": 71.0,
+      "script_error_count": 0,
+      "verified": true
+    }
+  ],
+  "posts": [
+    {
+      "post_id": "POST-101",
+      "publish_date": "2026-09-15",
+      "path": "/blog/search-intent-explained/"
+    },
+    {
+      "post_id": "POST-202",
+      "publish_date": "2026-10-08",
+      "path": "/blog/write-a-better-prospectus-page/"
+    }
+  ],
+  "page_gsc_daily": [
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-15",
+      "clicks": 7,
+      "impressions": 100
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-16",
+      "clicks": 8,
+      "impressions": 103
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-17",
+      "clicks": 9,
+      "impressions": 106
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-18",
+      "clicks": 10,
+      "impressions": 109
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-19",
+      "clicks": 11,
+      "impressions": 112
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-20",
+      "clicks": 7,
+      "impressions": 115
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-21",
+      "clicks": 8,
+      "impressions": 118
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-22",
+      "clicks": 9,
+      "impressions": 121
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-23",
+      "clicks": 10,
+      "impressions": 124
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-24",
+      "clicks": 11,
+      "impressions": 127
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-25",
+      "clicks": 7,
+      "impressions": 130
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-26",
+      "clicks": 8,
+      "impressions": 133
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-27",
+      "clicks": 9,
+      "impressions": 136
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-28",
+      "clicks": 10,
+      "impressions": 139
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-29",
+      "clicks": 11,
+      "impressions": 142
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-09-30",
+      "clicks": 7,
+      "impressions": 145
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-01",
+      "clicks": 8,
+      "impressions": 148
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-02",
+      "clicks": 9,
+      "impressions": 151
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-03",
+      "clicks": 10,
+      "impressions": 154
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-04",
+      "clicks": 11,
+      "impressions": 157
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-05",
+      "clicks": 7,
+      "impressions": 160
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-06",
+      "clicks": 8,
+      "impressions": 163
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-07",
+      "clicks": 9,
+      "impressions": 166
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-08",
+      "clicks": 10,
+      "impressions": 169
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-09",
+      "clicks": 11,
+      "impressions": 172
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-10",
+      "clicks": 7,
+      "impressions": 175
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-11",
+      "clicks": 8,
+      "impressions": 178
+    },
+    {
+      "post_id": "POST-101",
+      "date": "2026-10-12",
+      "clicks": 9,
+      "impressions": 181
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-08",
+      "clicks": 12,
+      "impressions": 150
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-09",
+      "clicks": 13,
+      "impressions": 156
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-10",
+      "clicks": 14,
+      "impressions": 162
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-11",
+      "clicks": 15,
+      "impressions": 168
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-12",
+      "clicks": 16,
+      "impressions": 174
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-13",
+      "clicks": 17,
+      "impressions": 180
+    },
+    {
+      "post_id": "POST-202",
+      "date": "2026-10-14",
+      "clicks": 18,
+      "impressions": 186
+    }
+  ],
+  "crm_fixture": {
+    "mode": "synthetic_fixture",
+    "contacts": [
+      {
+        "contact_id": "FAKE-000",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-001",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-002",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-003",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-004",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-005",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-006",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-007",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-008",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-009",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-010",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-011",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-012",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-013",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-014",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-015",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-016",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-017",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-018",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-019",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-020",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-021",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-022",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-023",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-024",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-025",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-026",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-027",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-028",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-029",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-030",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-031",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-032",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-033",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-034",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-035",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-036",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-037",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-038",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-039",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-040",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-041",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-042",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-043",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-044",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-045",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-046",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-047",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-048",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-049",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-050",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-051",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-052",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-053",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-054",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-055",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-056",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-057",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-058",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      },
+      {
+        "contact_id": "FAKE-059",
+        "created_on": "2026-10-08",
+        "stage": "applied"
+      },
+      {
+        "contact_id": "FAKE-060",
+        "created_on": "2026-10-08",
+        "stage": "new"
+      },
+      {
+        "contact_id": "FAKE-061",
+        "created_on": "2026-10-08",
+        "stage": "contacted"
+      }
+    ]
+  },
+  "illustrative_efficiency_model": {
+    "manual_hours_per_week": 5,
+    "review_hours_per_week": 1
+  }
+}

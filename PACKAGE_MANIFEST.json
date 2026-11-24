@@ -1,0 +1,121 @@
+{
+  "package": "seo-automation-operations-case-study",
+  "contains_live_data": false,
+  "files": [
+    {
+      "path": ".github/workflows/qa.yml",
+      "sha256": "c241ce12329fa1763d0d549d53bf4689ccb83d2a9df08fee883834c3c92e5da5",
+      "bytes": 882
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "3b294b8daf932bce93da48bb380b3b1bf346e3c455eaa596c315bb688da702e7",
+      "bytes": 144
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "d872ca3ab3c5b0aa171d9b074251a50f799dfbb81249042be60924d82fae8349",
+      "bytes": 1070
+    },
+    {
+      "path": "README.md",
+      "sha256": "69252cf6bd854eb63df12e6631a8681a191a4f40e229beb7fe1b9f8cbe67b287",
+      "bytes": 9007
+    },
+    {
+      "path": "docs/business-measurement.md",
+      "sha256": "0fb72be28c28a1e7190870954651f324208ed4b7d52effbe90c37885f1c8529a",
+      "bytes": 1907
+    },
+    {
+      "path": "docs/integrations.md",
+      "sha256": "b0780d8e0f4a3d3a563289ced8aeb8ea6317ce00b4c17863f9c03a13fb37a188",
+      "bytes": 4718
+    },
+    {
+      "path": "docs/interview-demo.md",
+      "sha256": "aebea1bc6067b52a7fc52788c9e9a227a02c4be74b2e547a6c29ebf5a6828424",
+      "bytes": 3730
+    },
+    {
+      "path": "docs/privacy.md",
+      "sha256": "7dadac6e0a18a4c86d2c0a840980c6f31dd5d65dc6ffbbc16c427237a8869c36",
+      "bytes": 1461
+    },
+    {
+      "path": "docs/publish-to-github.md",
+      "sha256": "2af1e0c01be7cb0ceb9c44cee61a916ea87f10108b38c1415acdb3076c6f69ba",
+      "bytes": 1430
+    },
+    {
+      "path": "docs/quality-and-evidence.md",
+      "sha256": "f7d1dd27430bf8b566810d24f88bbcb3a707afca4c67c829163d9c4d803617b4",
+      "bytes": 3111
+    },
+    {
+      "path": "examples/demo_input.json",
+      "sha256": "d51c860e22f2a011d40ca11dcb2058d314d562d1b98fccf30f6c7f221c63d0f3",
+      "bytes": 18804
+    },
+    {
+      "path": "examples/demo_output.json",
+      "sha256": "c3723be7aa89b49ebfc69a2e31216c9a4f70ae47c80799cfb077e5357b6e800c",
+      "bytes": 4833
+    },
+    {
+      "path": "examples/n8n_demo_output.json",
+      "sha256": "c3d54446ad26b84cdc72a0b5e3ee5dd0a5464952a4cf18849e049bfad11c2087",
+      "bytes": 4116
+    },
+    {
+      "path": "scripts/build_n8n_demo.py",
+      "sha256": "47638f6bced23b7b8c30af11d228fb576260ac484424428e730b1c7bfd2c4a83",
+      "bytes": 8543
+    },
+    {
+      "path": "scripts/replay_n8n_demo.js",
+      "sha256": "7f415d82179f46bbc73014380708dd55daa61827ad44e94f9be1957b025f67fa",
+      "bytes": 1343
+    },
+    {
+      "path": "scripts/security_scan.py",
+      "sha256": "bd7e1ab1c36a6b1d7cce4aea4bad8d357af1b4b80eb6b9e3bd35bb4b6dbfda48",
+      "bytes": 1911
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "de0693f8bd9d1d1ec07eb17c5b3c5d298ae4041ff06d58f778104db731a03964",
+      "bytes": 60
+    },
+    {
+      "path": "src/crm_http_demo.py",
+      "sha256": "079d0049d9817f6e51c8950dbff3d1a2bc0b62c71cd7ab5e1bf39e01e93c29c1",
+      "bytes": 4217
+    },
+    {
+      "path": "src/pipeline.py",
+      "sha256": "191b62ee96d3e40cdbf62659737883eb0a40bab44b02588d23492a9498554376",
+      "bytes": 12734
+    },
+    {
+      "path": "tests/test_crm_http_demo.py",
+      "sha256": "e8a9e0e2c67ee6c6759b5399fd7ec37716aade4ea34e494e5c527891df947fcd",
+      "bytes": 1862
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "sha256": "7d551fa3e0bb636e85fc4a8461638fd1057d914fb1ffe5aff534a54ac3cf1850",
+      "bytes": 8054
+    },
+    {
+      "path": "tests/test_public_package.py",
+      "sha256": "7993f9b66f4e75ba74e1a45a4588fb4fdbb4e6fc82436902a6b5c25ab9e32018",
+      "bytes": 1555
+    },
+    {
+      "path": "workflows/n8n-import-demo.json",
+      "sha256": "07a98f2e8bcaa3c119c29f327f9dd118e30679ae0ca9d4529346856107c5b8e5",
+      "bytes": 26139
+    }
+  ]
+}

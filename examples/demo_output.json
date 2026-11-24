@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "data_kind": "SYNTHETIC DEMO: zero client data",
+  "report_period_end": "2026-10-14",
+  "kpis": {
+    "gsc_organic_clicks": {
+      "previous": 1600,
+      "current": 1200,
+      "change_pct": -25.0
+    },
+    "gsc_impressions": {
+      "previous": 32000,
+      "current": 24000,
+      "change_pct": -25.0
+    },
+    "ga4_organic_sessions": {
+      "previous": 3200,
+      "current": 2400,
+      "change_pct": -25.0
+    },
+    "ga4_prospectus_form_submit_events": {
+      "previous": 130,
+      "current": 84,
+      "change_pct": -35.4
+    }
+  },
+  "quality_checks": {
+    "gsc_dates_finalized": true,
+    "ga4_event_confirmed": "prospectus_form_submit",
+    "source_date_coverage_complete": true,
+    "source_truncation": false,
+    "deduplication": "stable keys and conflicting duplicate rejection",
+    "storage": {
+      "verified": true,
+      "rows_in_store": 2,
+      "written_keys": [
+        "weekly|clicks|2026-10-14",
+        "weekly|events|2026-10-14"
+      ],
+      "storage_mode": "in-memory simulation"
+    }
+  },
+  "clarity": {
+    "previous_capture": "2026-10-13",
+    "current_capture": "2026-10-14",
+    "friction_flags": [
+      {
+        "segment": "OrganicSearch/Mobile",
+        "metric": "dead_click_session_pct",
+        "now_pct": 19.0,
+        "previous_pct": 10.0,
+        "change_pp": 9.0,
+        "sessions": 360,
+        "action": "Inspect recordings/heatmaps for unresponsive controls and form issues"
+      },
+      {
+        "segment": "PaidSearch/Mobile",
+        "metric": "dead_click_session_pct",
+        "now_pct": 32.0,
+        "previous_pct": 25.0,
+        "change_pp": 7.0,
+        "sessions": 1200,
+        "action": "Inspect recordings/heatmaps for unresponsive controls and form issues"
+      },
+      {
+        "segment": "PaidSearch/Mobile",
+        "metric": "script_error_count",
+        "events": 18,
+        "sessions": 1200,
+        "action": "Reproduce affected scripts in the browser and validate form submission"
+      }
+    ],
+    "scope": "sitewide channel x device, rolling 24h"
+  },
+  "crm_diagnostic": {
+    "adapter": "simulated; not a live CRM connection",
+    "unique_example_contacts": 62,
+    "ga4_prospectus_event_occurrences": 84,
+    "event_to_contact_gap": 22,
+    "status": "needs_follow_up",
+    "interpretation": "Directional audit only. One person can trigger multiple GA4 events; a CRM contact is a different measurement unit."
+  },
+  "posts": [
+    {
+      "post_id": "POST-101",
+      "url": "/blog/search-intent-explained/",
+      "cohorts": {
+        "7": {
+          "status": "complete",
+          "clicks": 60,
+          "impressions": 763
+        },
+        "14": {
+          "status": "complete",
+          "clicks": 124,
+          "impressions": 1673
+        },
+        "28": {
+          "status": "complete",
+          "clicks": 249,
+          "impressions": 3934
+        }
+      }
+    },
+    {
+      "post_id": "POST-202",
+      "url": "/blog/write-a-better-prospectus-page/",
+      "cohorts": {
+        "7": {
+          "status": "complete",
+          "clicks": 105,
+          "impressions": 1176
+        },
+        "14": {
+          "status": "awaiting_maturity"
+        },
+        "28": {
+          "status": "awaiting_maturity"
+        }
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "severity": "review",
+      "metric": "gsc_organic_clicks",
+      "change_pct": -25.0,
+      "action": "Inspect query and page changes; check indexing and search demand"
+    },
+    {
+      "severity": "review",
+      "metric": "ga4_prospectus_form_submit_events",
+      "change_pct": -35.4,
+      "action": "Inspect the GA4 event, prospectus form journey and lead-quality data separately"
+    },
+    {
+      "severity": "investigate",
+      "metric": "dead_click_session_pct",
+      "segment": "OrganicSearch/Mobile",
+      "action": "Inspect recordings/heatmaps for unresponsive controls and form issues"
+    },
+    {
+      "severity": "investigate",
+      "metric": "dead_click_session_pct",
+      "segment": "PaidSearch/Mobile",
+      "action": "Inspect recordings/heatmaps for unresponsive controls and form issues"
+    },
+    {
+      "severity": "investigate",
+      "metric": "script_error_count",
+      "segment": "PaidSearch/Mobile",
+      "action": "Reproduce affected scripts in the browser and validate form submission"
+    }
+  ],
+  "recommended_decisions": [
+    "Inspect query and page changes; check indexing and search demand",
+    "Inspect the GA4 event, prospectus form journey and lead-quality data separately",
+    "Inspect recordings/heatmaps for unresponsive controls and form issues"
+  ],
+  "time_savings_scenario": {
+    "estimated_hours_reallocated_per_week": 4.0,
+    "classification": "user-editable assumption, not measured staff savings",
+    "baseline_hours_assumed": 5.0,
+    "qa_hours_assumed": 1.0
+  }
+}
